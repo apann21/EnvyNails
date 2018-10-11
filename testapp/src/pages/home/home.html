@@ -1,21 +1,22 @@
 <ion-header>
-  <ion-navbar color="primary">
+  <ion-navbar color="dark">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title align="center">Envy Nails</ion-title>
+    <ion-title align="center" padding-right>Envy Nails</ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content>
   <br>
 
-  <h4 align="center">Welcome!</h4>
+  <h4 padding-left align="center">Welcome to Envy Nails Web Application!</h4>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nihil quae. Maxime unde eaque amet error,
     reprehenderit non corrupti! Deserunt quibusdam ex doloremque, repellat sunt nulla temporibus provident deleniti
     doloribus?</p>
-  <form action="/action_page.php" method="get">
-    <h2>Select your Services:</h2>
 
+  <form padding-horizontal>
+  <!-- Services List -->
+    <h2>Select your Services:</h2>
     <ion-item>
       <ion-label>Services: </ion-label>
       <ion-select multiple="true">
@@ -27,34 +28,45 @@
         <ion-option value="cutdown">Cut Down</ion-option>
       </ion-select>
     </ion-item>
+ <!-- Nail Technician List -->
+    <h2> Request A Nail Technician: </h2> 
+<div>
+  <ion-item>
+    <ion-label>Nail Technicians</ion-label>
+    <ion-select>
+      <ion-option value="f">NT1</ion-option>
+      <ion-option value="m">NT2</ion-option>
+      <ion-option value="n">NT3</ion-option>
+      <ion-option value="o">No</ion-option>
+    </ion-select>
+  </ion-item>
+</div>
+    <br>
+    <br>
 
-    <!-- <h1> Select your services: </h1>
-    <input type="checkbox" name="service" value="manicure">Manicure<br>
-    <input type="checkbox" name="service" value="pedicure">Pedicure<br>
-    <input type="checkbox" name="service" value="fullset">Full Set<br>
-    <input type="checkbox" name="service" value="dip">Dip<br>
-    <input type="checkbox" name="service" value="shellax">Gel Polish<br> -->
-
-    <h2> Preferred Nail Technician: </h2>
-
-    <select>
-      <option value="mani">NailTech1</option>
-      <option value="pedi">NailTech2</option>
-      <option value="full">NailTech3</option>
-      <option value="pedi">NailTech4</option>
-      <option value="full">NailTech5</option>
-    </select>
-    <br>
-    <br>
-    <br>
-    <br>
-    <input type="submit" value="Submit">
+   <!-- Submit Button -->
+    <button ion-button icon-end>
+        Submit
+      <ion-icon name="checkmark"></ion-icon>
+    </button>
   </form>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
-
-
-  <p>Customer Info: There will be no request after 5:00, thank you - Envy Nails
-  </p>
+  <h1 align="center">
+    Customer Info:
+  </h1>
+  <p align="center">There will be no request after 5:00, thank you - Envy Nails</p>
 
 </ion-content>
 <ion-content padding class="bg" no-scroll>
