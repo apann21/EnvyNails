@@ -1,8 +1,15 @@
 # EnvyNails
 Envy Nails Appointment Booking Application
+September 15th - Research and Installation
+September 16th - Installed Firebase CLI tools and Ionic CLI tools
+September 17th-20th - Research how Ionic and Firebase can be compatitble with each other.
+September 21st-25th - Worked on application with Ionic. Created HomePage, About Page, Contact Pages.
 September 26th - Uploaded Project Folder
-September 27th - Updated All Pages (HTML,CSS,JS)
-October 5th - Scrapped Project Folder
-October 6th-9th - Worked on new project
+September 27th - Updated All Pages (HTML,CSS,JS) Created basic layout for each page.
+October 5th - Scrapped Project Folder - project wouldn't run anymore..? Missing componenents so decided to start over.
+October 6th-9th - Worked on new project - Created Home Page and Price List Page. Made Different GUI Layout.
 October 11th - Created a new repository and Re-uploaded new Project Folder. Fixing layout of HomePage and getting the right information. Ran into problem trying to add title color to transparent navbar..
-October 12th - Hooking up firebase with Ionic 
+October 12th - Testing - Try to push data from Ionic to Firebase
+October 15th - Research how to push data to Firebase with Ionic
+October 16th - Attempt to create splash page with Ionic
+October 17th - Work on pushing data and pulling data with Firebase.
