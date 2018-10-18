@@ -13,3 +13,21 @@ October 12th - Testing - Try to push data from Ionic to Firebase
 October 15th - Research how to push data to Firebase with Ionic
 October 16th - Attempt to create splash page with Ionic
 October 17th - Work on pushing data and pulling data with Firebase.
+
+- Current status, including meeting MVPs
+(2/3) Pages Created, User is able to select services and nail technicians but, needs to connect data into firebase.
+
+- Progress made 
+Creating HomePage, Price Page, Services Form, Nail Technician Form, Navbar Menu Navigation.
+
+- Problems that you have encountered
+Connecting Firebase with Ionic App - problems with install and imports .. 'AngularFire not found'
+
+Things left to be implemented 
+- Contact Page (May or may not be implemented)
+- Connect and push data to firebase
+- Time Stamps
+- Update Button
+- Cancel Button
+- Layout Improvement
+- etc.
