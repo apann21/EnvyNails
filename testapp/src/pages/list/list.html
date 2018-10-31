@@ -1,23 +1,44 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
+  <ion-navbar color="dark">
+    <button ion-button menuToggle >
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>List</ion-title>
+    <ion-title align="center">Price List</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-end>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
+  <br>
+  <br>
+  
+  <br>
+    <ul class=leaders>
+        <li>
+          <span style="font-weight:bold">Manicure</span>
+          <span style="font-weight:bold">$18</span>
+        </li>
+        <br>
+        <li>
+          <span style="font-weight:bold">Pedicure</span>
+          <span style="font-weight:bold">$30-$70</span>
+        </li>
+        <br>
+        <li>
+          <span style="font-weight:bold">Full Set</span>
+          <span style="font-weight:bold">$28</span>
+        </li>
+        <br>
+        <li>
+          <span style="font-weight:bold">Shellac Only</span>
+          <span style="font-weight:bold">$20</span>
+        </li>
+        <br>
+        <li>
+          <span style="font-weight:bold">Dip Only</span>
+          <span style="font-weight:bold">$35</span>
+        </li>
+        <br>
+      </ul>
 </ion-content>
+<ion-content padding class="bg" no-scroll>
+  </ion-content>
