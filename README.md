@@ -13,6 +13,9 @@ October 12th - Testing - Try to push data from Ionic to Firebase
 October 15th - Research how to push data to Firebase with Ionic
 October 16th - Attempt to create splash page with Ionic
 October 17th - Work on pushing data and pulling data with Firebase.
+October 30th - Adding more CSS
+October 31st - Creating Time Stamps and Calendar
+November 1st - Database Implementation
 
 - Current status, including meeting MVPs
 (2/3) Pages Created, User is able to select services and nail technicians but, needs to connect data into firebase.
