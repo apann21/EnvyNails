@@ -14,7 +14,7 @@ October 15th - Research how to push data to Firebase with Ionic
 October 16th - Attempt to create splash page with Ionic
 October 17th - Work on pushing data and pulling data with Firebase.
 October 30th - Adding more CSS
-October 31st - Try to create Time Stamps and Calendar .. Issues with implementing calender. Ionic Date-Picker does not work.
+October 31st - Try to create Time Stamps and Calendar .. Issues with implementing calender. Ionic Date-Picker does not work. Calender is not implementable with ionic.. Tried to import Jquery date-picker (what I wanted) but could not get it to work. Will use Ionic's DateTime instead.
 November 1st - Database Implementation
 
 - Current status, including meeting MVPs
