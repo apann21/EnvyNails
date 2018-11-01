@@ -25,6 +25,7 @@ Creating HomePage, Price Page, Services Form, Nail Technician Form, Navbar Menu 
 
 - Problems that you have encountered
 Connecting Firebase with Ionic App - problems with install and imports .. 'AngularFire not found'
+Implementing Calender (date-picker) with Ionic does not work. Tried many solutions but failed. Tried to import Jquery date-picker but ran to too many errors. Will use Ionic's DateTime instead.
 
 Things left to be implemented 
 - Contact Page (May or may not be implemented)
@@ -32,5 +33,5 @@ Things left to be implemented
 - Time Stamps
 - Update Button
 - Cancel Button
-- Layout Improvement
+- Layout Improvement (Add Fonts..use GoogleFonts)
 - etc.
