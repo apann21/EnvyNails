@@ -34,4 +34,5 @@ Things left to be implemented
 - Update Button
 - Cancel Button
 - Layout Improvement (Add Fonts..use GoogleFonts)
+- Form Validation
 - etc.
