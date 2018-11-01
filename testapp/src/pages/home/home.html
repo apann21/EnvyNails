@@ -1,76 +1,126 @@
 <ion-header>
   <ion-toolbar color="dark">
-  <ion-navbar color="dark">
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title align="center" padding-right>Envy Nails</ion-title>
-  </ion-navbar>
-</ion-toolbar>
+    <ion-navbar color="dark">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title align="center" padding-right>Envy Nails</ion-title>
+    </ion-navbar>
+  </ion-toolbar>
 </ion-header>
 <ion-content>
   <br>
-
   <h4 padding-left align="center">Welcome to Envy Nails Web Application!</h4>
-  <p align="center">If you want to relax your body, mind and spirit, Envy Nails is the place! Our store is located in Southaven,MS.  We are focusing on today's fast paced modern lifestyles, and accommodating to these needs by providing a calm and restful sanctuary. Our spa & nail services will restore, revive and replenish you with a unique experience of ethnic treatments. We pay very special attention to our customers' health and comfort. Furthermore, we take your well being into great consideration. Take this opportunity and time to reconnect with yourself - all of our staff members are trained to help you do that. Envy Nails is a place of serenity and beauty where relaxation begins the moment you step through the door. Every visit can be customized to your personal interest, pleasure, and goal. </p>
-
-  <form padding-horizontal>
-  <!-- Services List -->
-    <h2>Select your Services:</h2>
+  <p align="center">If you want to relax your body, mind and spirit, Envy Nails is the place! Our store is located in
+    Southaven,MS. We are focusing on today's fast paced modern lifestyles, and accommodating to these needs by
+    providing a calm and restful sanctuary. Our spa & nail services will restore, revive and replenish you with a
+    unique experience of ethnic treatments. We pay very special attention to our customers' health and comfort.
+    Furthermore, we take your well being into great consideration. Take this opportunity and time to reconnect with
+    yourself - all of our staff members are trained to help you do that. Envy Nails is a place of serenity and beauty
+    where relaxation begins the moment you step through the door. Every visit can be customized to your personal
+    interest, pleasure, and goal. </p>
+  <br>
+  <form (ngSubmit)="logForm()">
+    <h3>Enter your name:</h3>
     <ion-item>
-      <ion-label>Services: </ion-label>
-      <ion-select multiple="true">
-        <ion-option value="manicure">Manicure</ion-option>
-        <ion-option value="pedicure">Pedicure</ion-option>
-        <ion-option value="fullset">Full Set</ion-option>
-        <ion-option value="dip">Dip</ion-option>
-        <ion-option value="gelpolish">Gel Polish</ion-option>
-        <ion-option value="cutdown">Cut Down</ion-option>
+      <ion-label>First Name</ion-label>
+      <ion-input type="text" [(ngModel)]="todo.name" name="name"></ion-input>
+    </ion-item>
+    <h3>Enter your number:</h3>
+    <ion-item>
+      <ion-label>Number</ion-label>
+      <ion-textarea [(ngModel)]="todo.number" name="number"></ion-textarea>
+    </ion-item>
+
+
+    <h3>Select your services:</h3>
+    <ion-item>
+      <ion-label>Services</ion-label>
+      <ion-select [(ngModel)]="todo.services" name="services" multiple="true">
+        <ion-option value="Manicure">Manicure</ion-option>
+        <ion-option value="Pedicure">Pedicure</ion-option>
+        <ion-option value="Full Set">Full Set</ion-option>
+        <ion-option value="Dip">Dip</ion-option>
+        <ion-option value="Gel Polish">Gel Polish</ion-option>
+        <ion-option value="Cut Down">Cut Down</ion-option>
+        <ion-option value="Repair">Repair</ion-option>
       </ion-select>
     </ion-item>
- <!-- Nail Technician List -->
-    <h2> Request A Nail Technician: </h2> 
-<div>
-  <ion-item>
-    <ion-label>Nail Technicians</ion-label>
-    <ion-select>
-      <ion-option value="no">No</ion-option>
-      <ion-option value="f">NT1</ion-option>
-      <ion-option value="m">NT2</ion-option>
-      <ion-option value="n">NT3</ion-option>
-      <ion-option value="l">NT4</ion-option>
-      <ion-option value="z">NT5</ion-option>
-    
-    </ion-select>
-  </ion-item>
-</div>
-    <br>
-    <br>
+    <h3>Request a Nail Technician:</h3>
+    <ion-item>
+      <ion-label>Nail Technicians</ion-label>
+      <ion-select [(ngModel)]="todo.nailtechnician" name="nailtechnician">
+        <ion-option value="Tania">Tania</ion-option>
+        <ion-option value="Ricardo">Ricardo</ion-option>
+        <ion-option value="Liz">Liz</ion-option>
+        <ion-option value="Uncle Mike">Uncle Mike</ion-option>
+        <ion-option value="Na">Na</ion-option>
+        <ion-option value="Big Mike">Big Mike</ion-option>
+        <ion-option value="Susan">Susan</ion-option>
+        <ion-option value="Paulena">Paulena</ion-option>
+        <ion-option value="Le">Le</ion-option>
+        <ion-option value="Tien">Tien</ion-option>
+        <ion-option value="Michael">Michael</ion-option>
+        <ion-option value="Lyly">Lyly</ion-option>
+        <ion-option value="B.Jay">B.Jay</ion-option>
+        <ion-option value="Mai Thy">Mai Thy</ion-option>
+        <ion-option value="Kaka">Kaka</ion-option>
+        <ion-option value="Kacey">Kacey</ion-option>
+        <ion-option value="Colin">Colin</ion-option>
+      </ion-select>
+    </ion-item>
+<h3>
+  Select the date of your appointment:
+</h3>
+    <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-datetime displayFormat="MMM DD, YYYY" pickerFormat="MMMM DDDD YYYY" [(ngModel)]="todo.myDate" name="myDate" (click)="date(myDate)"></ion-datetime>
+    </ion-item>
 
-   <!-- Submit Button -->
-    <button ion-button icon-end color="dark">
-        Submit
+    <br>
+    <br>
+    <button ion-button type="submit" icon-end color="dark" (click)="goToSuccessPage()" block>Submit Form
       <ion-icon name="checkmark"></ion-icon>
     </button>
   </form>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
 
+
+  
+
+  <!-- 
+  <h2>Select your Services:</h2>
+  <ion-item>
+    <ion-label>Services</ion-label>
+    <ionic-selectable item-content [isMultiple]="true" [(ngModel)]="service" [items]="services" itemValueField="id"
+      itemTextField="name" [canSearch]="true" (onChange)="serviceChange($event)">
+    </ionic-selectable>
+  </ion-item>
+  <h2>Request A Nail Technician:</h2>
+  <ion-item>
+    <ion-label>Nail Technicians</ion-label>
+    <ionic-selectable item-content [(ngModel)]="nailTech" [items]="nailTechs" itemValueField="id" itemTextField="name"
+      [canSearch]="true" (onChange)="nailTechChange($event)">
+    </ionic-selectable>
+  </ion-item>
+  <form padding-horizontal>
+    <br>
+    <br>
+
+     Submit Button -->
+  <!-- <button ion-button icon-end color="dark" type="submit" value="Submit">
+      Submit
+      <ion-icon name="checkmark"></ion-icon> -->
+  <!-- </button>
+  </form> -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <h1 align="center">
     Customer Info:
   </h1>
   <p align="center">There will be no request after 5:00, thank you - Envy Nails</p>
-
 </ion-content>
 <!-- Background Image Fullscreen-->
 <ion-content padding class="bg" no-scroll>
