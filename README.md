@@ -15,24 +15,24 @@ Envy Nails Appointment Booking Application
 - October 17th - Work on pushing data and pulling data with Firebase.
 - October 30th - Adding more CSS
 - October 31st - Try to create Time Stamps and Calendar .. Issues with implementing calender. Ionic Date-Picker does not work. Calender is not implementable with ionic.. Tried to import Jquery date-picker (what I wanted) but could not get it to work. Will use Ionic's DateTime instead.
-- November 1st - Database Implementation
+- November 1st-2nd - Try to implement Form-validation
 
 - Current status, including meeting MVPs
   - (2/3) Pages Created, User is able to select services and nail technicians but, needs to connect data into firebase.
-
 - Progress made 
   - Creating HomePage, Price Page, Services Form, Nail Technician Form, Navbar Menu Navigation.
 
 - Problems that you have encountered
   - Connecting Firebase with Ionic App - problems with install and imports .. 'AngularFire not found'
   - Implementing Calender (date-picker) with Ionic does not work. Tried many solutions but failed. Tried to import Jquery date-picker but ran to too many errors. Will use Ionic's DateTime instead.
+  - 
 
 Things left to be implemented 
+- (!) - important must be done.
 - Contact Page (May or may not be implemented)
-- Connect and push data to firebase
-- Time Stamps
+- Connect and push data to firebase (!)
+- Time Stamp Functionality (!)
 - Update Button
 - Cancel Button
 - Layout Improvement (Add Fonts..use GoogleFonts)
-- Form Validation
-- etc.
+- Form Validation (!)
